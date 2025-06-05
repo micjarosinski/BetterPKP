@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap");
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+    width: 99%;
+    font-family: "Rubik", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+h1 {
+    font-size: 30pt;
+    text-align: center;
+    color: white;
+}
+#logowanie {
+    display: block;
+}
+#rejestracja {
+    display: none;
+}
+div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input[type="submit"] {
+    padding: 12px 10px;
+    border: 0;
+    background: linear-gradient(to right, #de48b5 0%, #0097ff 100%);
+    border-radius: 3px;
+    margin: 10px 0px;
+    color: #fff;
+    letter-spacing: 1px;
+    width: 280px;
+    transition: 0.5s;
+    background-size: 150%;
+    background-position: left;
+    
+}
+input[type="submit"]:hover {
+    background-position: right;
+    cursor: pointer;
+}
+input[type="button"] {
+    width: 170px;
+    height: 20px;
+    background-color: #eceffc;
+    border: none;
+    font-size: 12pt;
+    margin: 0px;
+    text-decoration: underline;
+}
+input[type="button"]:hover {
+    cursor: pointer;
+}
+input {
+    width: 244px;
+    height: 46px;
+    padding: 0 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 15pt;
+    outline: 0;
+    transition: 0.2s;
+    margin: 10px 0px;
+}
+input:focus {
+    border-color: #0f7ef1;
+}
+
+.select {
+    position: relative;
+    min-width: 200px;
+}
+.select svg {
+    position: absolute;
+    right: 12px;
+    top: calc(50% - 3px);
+    width: 10px;
+    height: 6px;
+    stroke-width: 2px;
+    stroke: #9098a9;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+}
+.select select {
+    margin: 10px 0px;
+    appearance: none;
+    padding: 7px 40px 7px 12px;
+    width: 280px;
+    border: 2px solid #e8eaed;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 1px 3px -2px #9098a9;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15pt;
+    transition: all 150ms ease;
+}
+.select select:required:invalid {
+    color: #5a667f;
+}
+.select select option {
+    color: #223254;
+}
+.select select option[value=""][disabled] {
+    display: none;
+}
+.select select:focus {
+    outline: none;
+    border-color: #0f7ef1;
+    box-shadow: 0 0 0 2px rgba(0,119,255,0.2);
+}
+.select select:hover + svg {
+    stroke: #0f7ef1;
+}
+.sprites {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    user-select: none;
+}
